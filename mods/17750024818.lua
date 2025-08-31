@@ -1,3 +1,5 @@
+--// if u skid from this stavs gonna yell at you, not me
+
 --[[
 
     kool.aid --> Bedwarz
