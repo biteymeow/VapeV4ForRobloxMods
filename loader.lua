@@ -3,7 +3,7 @@ local success,returned=pcall(function()
 local startTime=tick() --// it took me 1 hour to figure out how to find the loading time
 
 local code=[[
-	return (loadstring or load)(game:HttpGet('https://raw.githubusercontent.com/biteymeow/VapeV4ForRobloxMods/refs/heads/main/mods/17750024818.lua', true))()
+	return loadstring(game:HttpGet('https://raw.githubusercontent.com/biteymeow/VapeV4ForRobloxMods/refs/heads/main/mods/17750024818.lua', true))()
 ]]
 
 writefile('newvape/games/17750024818.lua', code)
