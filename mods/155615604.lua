@@ -4,6 +4,6 @@ local hi = vape.Categories.Combat:CreateModule({
 	Name = 'hi',
 	Function = function(callback)
 		print(tostring(callback))
-	end
+	end,
 	Tooltip = 'This is a test module.'
 })
