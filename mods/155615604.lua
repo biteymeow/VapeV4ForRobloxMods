@@ -1,16 +1,9 @@
 local vape = shared.vape
 
-local SilentAim
-SilentAim = vape.Categories.Combat:CreateModule({
-	Name = 'SilentAim',
+local hi = vape.Categories.Combat:CreateModule({
+	Name = 'hi',
 	Function = function(callback)
-		print(callback, 'module state')
-		SilentAim:Clean(Instance.new('Part'))
-		repeat
-			print('repeat loop!')
-			task.wait(1)
-		until (not SilentAim.Enabled)
-	end,
-	ExtraText = function() return 'Test' end,
+		print(callback)
+	end
 	Tooltip = 'This is a test module.'
 })
