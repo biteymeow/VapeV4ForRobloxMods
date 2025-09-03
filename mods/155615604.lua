@@ -2,11 +2,12 @@ local vape = shared.vape
 
 local prisonlifedevs = vape.Categories.Combat:CreateModule({
     Name = 'prison life devs',
+    Function = function(callback)
+                print(callback, 'state')
+                repeat
+                    print('hi!')
+                    task.wait(1)
+                until (not prisonlifedevs.Enabled)
+    end
     Tooltip = 'idk just a test'
 })
-
-coroutine.resume(coroutine.create(function()
-    while task.wait(.1) do
-                print('enabled?' .. prisonlifedevs.Enabled)
-    end
-end))
